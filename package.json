@@ -1,0 +1,35 @@
+{
+  "name": "pro-store",
+  "version": "1.0.0",
+  "description": "MERN APP",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohit163/Pro-Shop.git"
+  },
+  "author": "rohit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohit163/Pro-Shop/issues"
+  },
+  "homepage": "https://github.com/rohit163/Pro-Shop#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^6.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.12.5",
+    "nodemon": "^2.0.7"
+  }
+}
